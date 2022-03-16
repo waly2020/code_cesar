@@ -6,6 +6,36 @@
 body{
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.champs{
+    width: 800px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    border: solid 1px #000;
+}
+.code,.bouton{
+    grid-column: span 2;
+}
+.champs > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.code input{
+    width: 60px;
+    padding: 8px;
+}
+.converse input, .nom input{
+    width: 300px;
+    padding: 8px 4px;
+    border: solid 1px rgb(2, 172, 2);
+}
+.bouton button{
+    padding: 5px 8px;
+    cursor: pointer;
 }
