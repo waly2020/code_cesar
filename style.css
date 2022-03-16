@@ -9,16 +9,25 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(5, 32, 44);
+    font-family: monospace;
+}
+h1{
+    font-size: 4rem;
+    margin-bottom: 8px;
+    color: #fff;
 }
 .champs{
     width: 800px;
     height: 200px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
-    border: solid 1px #000;
+    grid-template-rows: repeat(2,1fr);
+    border-radius: 6px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.356) inset,
+                -2px -2px 3px rgba(99, 99, 99, 0.295) inset;
 }
-.code,.bouton{
+.code{
     grid-column: span 2;
 }
 .champs > div{
@@ -29,13 +38,22 @@ body{
 .code input{
     width: 60px;
     padding: 8px;
+    border: none;
+    border: solid 2px #fff;
+    background: none;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+label{
+    color: #fff;
+    font-size: 1.5rem;
 }
 .converse input, .nom input{
     width: 300px;
-    padding: 8px 4px;
-    border: solid 1px rgb(2, 172, 2);
-}
-.bouton button{
-    padding: 5px 8px;
-    cursor: pointer;
+    padding: 12px 6px;
+    border: none;
+    border-bottom: solid 2px #aaa;
+    background: rgba(0, 0, 0, 0.432);
+    color: #fff;
 }
