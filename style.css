@@ -56,4 +56,6 @@ label{
     border-bottom: solid 2px #aaa;
     background: rgba(0, 0, 0, 0.432);
     color: #fff;
+    font-size: 19px;
+    font-family: monospace;
 }
